@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @condiment.name %>
+</p>
+
+<p>
+  <strong>Spiceindex:</strong>
+  <%= @condiment.spiceindex %>
+</p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @condiment.amount %>
+</p>
+
+<%= link_to 'Edit', edit_condiment_path(@condiment) %> |
+<%= link_to 'Back', condiments_path %>

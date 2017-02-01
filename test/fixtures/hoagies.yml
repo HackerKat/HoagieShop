@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  bread: one
+  ingredient: one
+  condiment: one
+
+two:
+  name: MyString
+  bread: two
+  ingredient: two
+  condiment: two

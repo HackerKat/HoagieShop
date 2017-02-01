@@ -1,0 +1,37 @@
+<%= form_for(hoagy) do |f| %>
+  <% if hoagy.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(hoagy.errors.count, "error") %> prohibited this hoagy from being saved:</h2>
+
+      <ul>
+      <% hoagy.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :bread_id %>
+    <%= f.text_field :bread_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ingredient_id %>
+    <%= f.text_field :ingredient_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :condiment_id %>
+    <%= f.text_field :condiment_id %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
